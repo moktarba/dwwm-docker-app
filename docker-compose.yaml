@@ -18,7 +18,7 @@ services:
         environment:
             MYSQL_ROOT_PASSWORD: secret
             MYSQL_DATABASE: app-data
-            MYSQL_USER: MYSQL_USER
+            MYSQL_USER: user
             MYSQL_PASSWORD: secret
         volumes:
             - mysql-data:/var/lib/mysql
