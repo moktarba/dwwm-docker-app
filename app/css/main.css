@@ -80,7 +80,7 @@ nav #search #searchform {
 }
 
 /*---------------------*/
-/*       header
+/*       header       
 /*---------------------*/
 /* line 72, ../sass/main.scss */
 header {
@@ -142,17 +142,17 @@ header #menu ul a:hover {
 }
 
 /*---------------------*/
-/*       page
+/*       page       
 /*---------------------*/
 /* line 128, ../sass/main.scss */
 #page {
   height: 2000px;
   bottom: 20px;
   /*---------------------*/
-  /*   page profil.php
+  /*   page profil.php   
   /*---------------------*/
   /*---------------------*/
-  /*   fin page profil.php
+  /*   fin page profil.php   
   /*---------------------*/
 }
 /* line 132, ../sass/main.scss */
@@ -215,7 +215,7 @@ header #menu ul a:hover {
 #page #contenuPage {
   position: relative;
   /*---------------------*/
-  /*       boxComments
+  /*       boxComments       
   /*---------------------*/
 }
 /* line 194, ../sass/main.scss */
@@ -226,10 +226,10 @@ header #menu ul a:hover {
   width: 62%;
   float: left;
   /*---------------------*/
-  /*    login et signup
+  /*    login et signup   
   /*---------------------*/
   /*------------------------------*/
-  /*    fin page login et signup
+  /*    fin page login et signup      
   /*------------------------------*/
 }
 /* line 206, ../sass/main.scss */
@@ -572,7 +572,7 @@ header #menu ul a:hover {
 }
 
 /*---------------------*/
-/*       footer
+/*       footer       
 /*---------------------*/
 /* line 500, ../sass/main.scss */
 footer {
@@ -638,7 +638,7 @@ footer .copyright p {
 }
 
 /*---------------------*/
-/*  css du Post Single
+/*  css du Post Single      
 /*---------------------*/
 /* line 557, ../sass/main.scss */
 #Post {
@@ -840,7 +840,7 @@ footer .copyright p {
 }
 
 /*---------------------*/
-/*     page contact
+/*     page contact      
 /*---------------------*/
 /* line 735, ../sass/main.scss */
 #boxMaps {
@@ -974,7 +974,7 @@ footer .copyright p {
 }
 
 /*---------------------*/
-/*   page compte.php
+/*   page compte.php   
 /*---------------------*/
 /* line 843, ../sass/main.scss */
 #box_name {
@@ -1168,10 +1168,10 @@ footer .copyright p {
 }
 
 /*---------------------*/
-/*    fin page compte.php
+/*    fin page compte.php   
 /*---------------------*/
 /*---------------------*/
-/*   page profil.php
+/*   page profil.php   
 /*---------------------*/
 /* line 1029, ../sass/main.scss */
 #box_profil {

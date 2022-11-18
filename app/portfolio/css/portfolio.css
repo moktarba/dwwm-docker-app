@@ -1,0 +1,224 @@
+@charset "CP850";
+/* ---------------------------------------------------- */
+/*		général for portfolio
+/* ---------------------------------------------------- */
+/* line 7, ../sass/main.scss */
+#wrap {
+  background: url("img/moktarba2.jpg" 0 0 no-repeat);
+}
+
+/* line 12, ../sass/main.scss */
+.container {
+  /*width: 960px;*/
+  margin: 0 auto;
+  background: url("..img/background.png" 0 0 no-repeat);
+}
+
+/* line 19, ../sass/main.scss */
+nav {
+  /*width: 960px;*/
+  height: 60px;
+  background-color: #003333;
+  -webkit-box-shadow: black 2px 0 10px;
+  -moz-box-shadow: black 2px 0 10px;
+  box-shadow: black 2px 0 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 26, ../sass/main.scss */
+nav #navigation {
+  float: left;
+  width: 660px;
+  position: relative;
+}
+/* line 30, ../sass/main.scss */
+nav #navigation ul {
+  margin: 0 0 50px 5px;
+  padding: 0;
+}
+/* line 34, ../sass/main.scss */
+nav #navigation ul li {
+  float: left;
+}
+/* line 37, ../sass/main.scss */
+nav #navigation ul li a {
+  font-family: "I'm fashionista!_DEMO-version" "FunnyKid" Cambria Verdana "Times New Roman" sans-serif;
+  text-decoration: none;
+  padding: 0 10px;
+  color: #fff;
+  display: block;
+  line-height: 60px;
+}
+/* line 48, ../sass/main.scss */
+nav #navigation .membres {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding-right: 10px;
+}
+/* line 53, ../sass/main.scss */
+nav #navigation .membres a {
+  font-size: .7em;
+  font-style: italic;
+}
+/* line 60, ../sass/main.scss */
+nav #search {
+  width: 200px;
+  float: right;
+  margin: 20px 50px;
+}
+/* line 64, ../sass/main.scss */
+nav #search #q {
+  height: 20px;
+  color: #999;
+  width: 200px;
+  font-size: .9em;
+  border: 1px solid #47E8E8;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  padding: 0 0 0 20px;
+  outline: none;
+  background-color: #fff;
+  font-style: italic;
+  font-family: "FunnyKid" Cambria Verdana "Times New Roman" sans-serif;
+}
+
+/*-------------------------------*/
+/*            header            */
+/*------------------------------*/
+/* line 83, ../sass/main.scss */
+#logo {
+  height: 80px;
+  width: 300px;
+}
+/* line 87, ../sass/main.scss */
+#logo a img {
+  display: block;
+}
+
+/* line 91, ../sass/main.scss */
+#header .container {
+  position: relative;
+}
+/* line 94, ../sass/main.scss */
+#header .container #reseaux {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+/* line 98, ../sass/main.scss */
+#header .container #reseaux ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 101, ../sass/main.scss */
+#header .container #reseaux ul li {
+  display: inline-block;
+  -webkit-box-shadow: black 0 0 2px;
+  -moz-box-shadow: black 0 0 2px;
+  box-shadow: black 0 0 2px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 106, ../sass/main.scss */
+#header .container #reseaux ul li a {
+  width: 32px;
+  height: 32px;
+  display: block;
+  background: url("../img/reseaux.png") 0 0 no-repeat;
+}
+/* line 112, ../sass/main.scss */
+#header .container #reseaux ul li .fb {
+  background-position: -96px 0;
+}
+/* line 114, ../sass/main.scss */
+#header .container #reseaux ul li .fb:hover {
+  background-position: -96px -32px;
+}
+/* line 119, ../sass/main.scss */
+#header .container #reseaux ul li .gg {
+  background-position: -64px 0;
+}
+/* line 121, ../sass/main.scss */
+#header .container #reseaux ul li .gg:hover {
+  background-position: -64px -32px;
+}
+/* line 126, ../sass/main.scss */
+#header .container #reseaux ul li .tt {
+  background-position: 0 0;
+}
+/* line 128, ../sass/main.scss */
+#header .container #reseaux ul li .tt:hover {
+  background-position: 0 -32px;
+}
+/* line 133, ../sass/main.scss */
+#header .container #reseaux ul li .yt {
+  background-position: -32px 0;
+}
+/* line 135, ../sass/main.scss */
+#header .container #reseaux ul li .yt:hover {
+  background-position: -32px -32px;
+}
+
+/*-------------------------------*/
+/*        presentation          */
+/*------------------------------*/
+/* line 150, ../sass/main.scss */
+#presentation {
+  height: 400px;
+  -webkit-box-shadow: black 0 0 2px;
+  -moz-box-shadow: black 0 0 2px;
+  box-shadow: black 0 0 2px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  margin: 20px 0 20px 0;
+  padding: 0;
+  /*background-color: red;
+  opacity: .6; */
+}
+
+/* line 160, ../sass/main.scss */
+footer {
+  -webkit-box-shadow: black 2px 0 10px;
+  -moz-box-shadow: black 2px 0 10px;
+  box-shadow: black 2px 0 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  height: 40px;
+  margin: 40px auto;
+  background-color: #003333;
+  opacity: 1;
+}
+/* line 167, ../sass/main.scss */
+footer p {
+  font-style: italic;
+  font-size: .7em;
+  text-align: center;
+  color: #fff;
+  padding: 15px 0;
+}
+
+/*-------------------------------*/
+/*            portfolio            */
+/*------------------------------*/
+/* line 181, ../sass/main.scss */
+#portfolio {
+  background: url("../img/portfolio/apropos.jpg");
+  height: 10200px;
+  margin: 0 auto;
+}
