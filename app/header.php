@@ -16,46 +16,46 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/main.css">
   <body>
     <div id="wrap">
-      <nav>
-        <div id="menu">
-          <ul>
-            <a href="../portfolio/index.html"><li>moktarba</li></a>
-            <a href="../portfolio/index.html"><li>portfolio</li></a>
-            <a href="contact.php"><li>contact</li></a>
+  	<nav>
+  		<div id="menu">
+  			<ul>
+  				<a href="../portfolio/index.html"><li>moktarba</li></a>
+  				<a href="../portfolio/index.html"><li>portfolio</li></a>
+  				<a href="contact.php"><li>contact</li></a>
 
-          </ul>
-          <ul id="reseaux">
-            <?php if (USER::auth()): ?>
-              <a href="login.php?logout"><li>Déconnexion</li></a>
-              <a href="compte.php"><li>Mon compte</li></a>
-              <a><li>Bonjour <?php echo $_SESSION['user']['username'] ?></li></a>
-            <?php else: ?>
-              <a href="login.php"><li>se connecter</li></a>
-              <a href="signup.php"><li>s'inscrire</li></a>
-            <?php endif ?>
-          </ul>
-        </div>
-        <div id="search">
-          <form id="searchform" action='search.php' method="GET" >
-            <input type="text" id="q" name="q" value= "Recherche"
-            onfocus='if(this.value=="Recherche"){value="";}'
-            onblur='if(this.value==""){this.value="Recherche";}'
-            >
-          </form>
-        </div>
-      </nav>
-      <header>
-        <div id="logo"><a href="../"><img src="img/logo.png"></a><p>L'informatique, ma passion</p></div>
-        <div id="menu">
-          <ul>
-            <a href="index.php?categorie=4"><li>Divers</li></a>
-            <a href="index.php?categorie=3"><li>sport</li></a>
-            <a href="index.php?categorie=2"><li>high-tech</li></a>
-            <a href="index.php?categorie=1"><li>informatique</li></a>
-            <a href="index.php"><li>home</li></a>
-          </ul>
-        </div>
-      </header>
+  			</ul>
+  			<ul id="reseaux">
+  				<?php if (USER::auth()): ?>
+            <a href="login.php?logout"><li>Déconnexion</li></a>
+            <a href="compte.php"><li>Mon compte</li></a>
+            <a><li>Bonjour <?php echo $_SESSION['user']['username'] ?></li></a>
+        <?php else: ?>
+            <a href="login.php"><li>se connecter</li></a>
+            <a href="signup.php"><li>s'inscrire</li></a>
+          <?php endif ?>
+  			</ul>
+  		</div>
+  		<div id="search">
+  			<form id="searchform" action='search.php' method="GET" >
+  				<input type="text" id="q" name="q" value= "Recherche" 
+  				onfocus='if(this.value=="Recherche"){value="";}'
+  				onblur='if(this.value==""){this.value="Recherche";}'
+  				>
+  			</form>
+  		</div>
+  	</nav>
+  	<header>
+  		<div id="logo"><a href="../"><img src="img/logo.png"></a><p>L'informatique, ma passion</p></div>
+  		<div id="menu">
+  			<ul>
+          <a href="index.php?categorie=4"><li>Divers</li></a>
+  				<a href="index.php?categorie=3"><li>sport</li></a>
+  				<a href="index.php?categorie=2"><li>high-tech</li></a>
+  				<a href="index.php?categorie=1"><li>informatique</li></a>
+          <a href="index.php"><li>home</li></a>
+  			</ul>
+  		</div>
+  	</header>

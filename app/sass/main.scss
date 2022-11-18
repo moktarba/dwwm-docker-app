@@ -1,0 +1,1087 @@
+@import "compass";
+
+/* ---------------------------------------------------- */
+/*		général for blog
+/* ---------------------------------------------------- */
+
+#wrap{
+	width: 960px;
+	margin: 0 auto;
+}
+nav{
+	height: 40px;
+	background-color: #333333;
+	position: relative;
+	#menu{
+		position: absolute;
+		width: 700px;
+
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+			li{
+				float: left;
+				padding: 10px 20px;
+			}
+			a{
+					font-size: .9em;
+					line-height: 100%;
+					color: #fff;
+					text-decoration: none;
+					&:hover{
+						color:#27b5f0;
+					}
+					&:active{
+						color:#27b5f0;}
+
+			 }
+		}
+		#reseaux{
+			float: right;
+			a{
+				font-size: .7em;
+			}
+		}
+	}
+	#search{
+		float: right;
+		width: 200px;
+		top: 7px;
+		margin-right: 15px;
+		#q{
+			color: #999;
+			background-color: #fff;
+			font-weight: bold;
+			padding-left: 10px;
+			border: 1px solid #27b5f0;
+			@include border-radius(7px);
+			outline: none;
+		}
+		#searchform{
+			padding-top: 8px;
+		}
+		
+	}
+}
+
+/*---------------------*/
+ /*       header       
+/*---------------------*/
+
+header{
+	position: relative;
+	height: 120px;
+	background-color: #333366;
+	margin: 0;
+	padding: 0;
+	#logo{
+		width: 130px;
+		float: left;
+		a{
+			display: block;
+		}	
+		p{
+			float: left;
+			font-size: .5em;
+			color: #fff;
+			font-family:"Segoe Print" "Times New Roman" Verdana sans-serif;
+			font-style: italic;
+			text-align: center;
+			margin: 0 0 0 15px;
+			padding: 0;
+			
+		}
+	}
+	#menu{
+		width: 900px;
+		position: absolute;
+		margin: 0 0 10px 0;
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				float: right;
+				list-style-type: none;
+				padding: 0 30px;
+				margin: 30px 0 0 0;
+				display: block;
+
+			}
+			a{
+				text-decoration: none;
+				color: #fff;
+				text-transform: uppercase;
+				font-family:"Segoe Print" "Times New Roman" Verdana sans-serif;
+				&:hover{
+				color:#27b5f0;
+				}
+			}
+		}
+	}
+}
+
+/*---------------------*/
+ /*       page       
+/*---------------------*/
+
+#page{
+		height: 2000px;
+		bottom: 20px;
+			a
+				{
+					text-decoration: none;
+					outline: none;
+				}
+
+		/*---------------------*/
+ 		/*   page profil.php   
+		/*---------------------*/
+
+				  #box_modif{
+
+
+					h4{
+						font-size: 1.2em;
+						color: #1E2244;
+						border-bottom: 1px dotted #132154;
+					}	
+					form{
+						
+				  			background-color:#9999CC;
+							opacity:0.7;
+							padding:10px;
+							color:#000;
+							font-size:0.9em;
+							font-style:italic;
+							line-height:15px;
+							position:relative;
+							overflow:hidden;
+							margin: 1px;
+						label{
+								display:block;
+								font-weight: bold;
+
+						}
+						input[type='text'],input[type='email'],	input[type='password']{
+							height:25px;
+							width:300px;
+							border:1px solid #DDD;
+							outline: none;
+						}	
+						textarea{
+							border:1px solid #DDD;
+							outline: none;
+							width:97%;
+							height:200px;
+						}
+						input[type='submit']{
+							background:#6083A3;
+							border:1px solid #DDD;
+							@include border-radius(3px);
+							color:#FFF;
+							font-size: 1em;
+							padding:5px 10px;			
+						}
+	  			    }
+				}
+
+		/*---------------------*/
+ 		/*   fin page profil.php   
+		/*---------------------*/
+	#contenuPage{
+		position: relative;
+		#boxArticles {
+			 height: 2000px;
+			top: 20px;
+			position: absolute;
+			width: 62%;
+			float: left;
+
+		
+
+		/*---------------------*/
+ 		/*    login et signup   
+		/*---------------------*/
+			#login-signup{
+				h2{border-bottom: 1px dotted #999;}
+				border: 1px solid #ddd;
+				@include border-radius(9px);
+				@include box-shadow(#fff 0 0 12px);
+				text-align: center;
+				margin: 20px 10px 0 40px;
+				font-style: italic;
+				color: #888;
+				font-weight: bold;;
+				a{
+					font-size: .6em;
+					text-decoration: none;
+					outline: none;
+				}
+				input[type='text'],input[type='email'],	input[type='password']{
+					height:25px;
+					width:300px;
+					border:1px solid #DDD;
+					outline: none;
+				}	
+				input[type='submit']{
+					background:#27b5f0;
+					border:1px solid #DDD;
+					@include border-radius(3px);
+					color:#FFF;
+					font-size: 1em;
+					padding:5px 10px;			
+				}
+
+
+
+			}
+
+		/*------------------------------*/
+		/*    fin page login et signup      
+		/*------------------------------*/
+
+			.moyenArticle{
+				float: left;
+				background-color: #ccccff;
+				padding: 10px 20px;
+				width: 95%;
+				margin: 10px 10px;
+				h3{
+						font-size: 24pt;
+						text-align: center;
+						color: #3B165B;
+						margin: 0;
+				  }
+				  p{
+				  	font-size: .9em;
+				  	margin: 10px;
+				  	font-family: Cambria, Verdana, "Times New Roman" sans-serif;
+				  }
+
+				.thumb-moyen{
+					border: 1px solid #fff;
+					@include border-radius(9px);
+					@include box-shadow(#fff 0 0 12px);
+					float: left;
+					width: 550px;
+					/*height: 200px;*/
+					margin: 10px 10px;
+					img{
+						max-width: 100%;
+						max-height: 100%;
+					}
+				}
+			
+			}
+
+			.petitArticle{
+				float: left;
+				background-color: #ccccff;
+				padding: 10px 20px;
+				margin: 10px 10px;
+				width: 95%;
+				
+				h3{
+						font-size: 18pt;
+						margin: 0;
+						text-align: center;
+						color: #3B165B;
+				   }
+				.thumb-petit{
+					border: 1px solid #fff;
+					@include border-radius(9px);
+					@include box-shadow(#fff 0 0 12px);
+					float: left;
+					width: 100px;
+					height: 70px;
+					img{
+						max-width: 100%;
+						max-height: 100%;
+					}
+				}
+				.content-petit{
+					width:80%;
+					display: inline-block;
+					float: right;
+					
+					p{
+						font-size: .8em;
+						margin: 0;
+						padding: 0;
+						font-family: Cambria, Verdana, "Times New Roman" sans-serif;
+					}
+
+				}
+			}
+
+			.doubleArticle{
+				float: left;
+				background-color: #ccccff;
+				padding: 10px 20px;
+				width: 95%;
+				margin: 10px 10px;
+
+				.doubleArticleFirst{
+					float: left;
+					width: 250px;
+					right: 10px;
+				}
+				.doubleArticleSecond{
+					float: right;
+					width: 250px;
+					left: 0;
+				}
+
+				h3{
+						font-size: 16pt;
+						text-align: center;
+						color: #3B165B;
+						margin: 0;
+				  }
+				  p{
+						font-size: .7em;
+						margin: 0;
+						padding: 0;
+						width: 100%;
+						font-family: Cambria, Verdana, "Times New Roman" sans-serif;
+				}
+				.content-double{
+					float: right;	
+					width: 90px;
+					margin: 0;
+					padding:0;
+				}
+				.thumb-double{
+					border: 1px solid #fff;
+					@include border-radius(9px);
+					@include box-shadow(#fff 0 0 12px);
+					float: left;
+					width: 150px;
+					height: 100px;
+					margin:0;
+					img{
+						max-width: 100%;
+						max-height: 100%;
+					}
+				}
+				
+
+			}
+		  
+
+		  
+			
+		}
+
+
+	/*---------------------*/
+ 	/*       boxComments       
+	/*---------------------*/
+		#boxComments{
+			background-color: #9999cc;
+			height: 1900px; 
+			position: absolute;
+			width: 31%;
+			right:0;
+			padding: 20px 15px;
+			top: 10px;
+			margin: 20px 0;
+		}
+		.lastPosts{
+				background-color: #fff;
+				margin: 10px 0;
+				border: 1px solid #fff;
+				@include border-radius(3px);
+				@include box-shadow(#fff 0 0 2px);
+				.thumbLastPosts{
+				border: 1px solid #9999cc;
+				@include border-radius(3px);
+				@include box-shadow(#fff 0 0 2px);
+				width: 100px;
+				float: left;
+				margin: 2px;
+	
+				img{
+					/*max-height: 90px;*/
+					max-width: 98px;
+					max-height: 50px;
+					}
+				}
+				.content{
+					h3{
+						font-size: .7em;
+						text-align: center;
+						text-decoration: underline;
+
+					}
+
+					p{
+						font-size: .5em;
+						margin: 0;
+					}
+				}
+				
+				ul{
+					margin: 0;
+					padding: 0;
+					a{
+					text-decoration: none;
+					display: block;
+				}
+					li{
+						font-style: italic;
+						font-family: Cambria Verdana "Times New Roman" sans-serif;
+						list-style: none;
+						color: #999;
+						margin: 10px;
+						border-bottom: 1px dotted #ddd;
+					}
+				}
+
+				h2{
+						font-size: .7em;
+						text-align: center;
+						text-decoration: underline;
+
+					}
+			}
+		.lastVideos{
+				border: 1px solid #9999cc;
+				@include border-radius(3px);
+				@include box-shadow(#fff 0 0 2px);
+				background-color: #fff;
+				margin: 10px 0;
+				h4{
+					font-size: .6em;
+					color: #432A54;
+					font-style: italic;
+					margin: 0;
+				}
+				h3{
+					font-size: .6em;
+					color: #888;
+					font-style: italic;
+					margin: 0;
+				}
+				h2{
+					font-size: 1em;
+					color: #432A54;
+					font-style: italic;
+					text-align: center;
+					margin: 10px;
+					text-decoration: underline;
+					font-family: Cambria, Verdana, "Times New Roman" sans-serif;
+				}
+				p{
+					font-size: .6em;
+					margin: 0;
+					color:#432A54;
+					font-style: italic;
+					margin: 0;
+				}
+				.content{
+					width: 100px;
+					float: right;
+				}
+				.video{
+					border-bottom: 1px dotted #000;
+					margin: 10px 20px;
+				}
+			}
+
+			
+	}
+}
+
+/*---------------------*/
+ /*       footer       
+/*---------------------*/
+footer{
+	height: 280px;
+	background-color: #000;	
+	position: relative;
+	bottom: 0;
+	width: 960px;
+	margin: auto;
+	ul{
+		margin: 0;
+		padding: 0;
+	}
+	.footer{
+		float: left;
+		height: 180px;
+		width: 170px;
+		background-color: #170C21;
+		display: inline-block;
+		border: 1px solid #ddd;
+		margin: 30px 0 20px 30px;
+		@include border-radius(9px);
+		@include box-shadow(#fff 0 0 12px);
+		font-family: Cambria Verdana "Times New Roman" sans-serif;
+			
+		h4{
+			color: #fff;
+			text-align: center;
+			border-bottom: 1px dotted #fff;
+		}
+		li{
+			list-style: none;
+			margin: 10px;
+			color: #fff;
+			text-decoration: none;
+		}
+		a{
+			text-align: center;
+			outline: none;
+			text-decoration: none;
+		}
+	 	
+	}
+	.copyright{
+		float: left;
+		p{
+			
+			font-family: Cambria Verdana "Times New Roman" sans-serif;
+			text-align: center;
+			color: #403E42;
+		}
+	}
+
+}
+
+	/*---------------------*/
+ 	/*  css du Post Single      
+	/*---------------------*/
+
+	#Post{
+		border: 1px solid #ddd;
+		@include border-radius(9px);
+		@include box-shadow(#fff 0 0 12px);
+		height: 1930px;
+		top: 30px;
+		position: absolute;
+		width: 63%;
+		float: left;
+
+		#nbr_comments{
+			float: left;
+			width: 37px;
+			height: 40px;
+			position: relative;
+			margin:0; padding:0;
+
+			
+			img{
+				float: left;
+				position: absolute;
+				width: 50px;
+				height: 30px;
+				
+
+			}
+			span{
+				
+				color: #36043D;
+				font-size: 15pt;
+				font-weight: bold;
+			}
+		}
+
+		span{
+			float: right;
+			font-size: .6em;
+			font-style: italic;
+			margin: 0 10px;
+			color: #331A4F;
+			opacity: .6;
+		}
+
+		h2{
+			font-size: 2em;
+			margin: 10px;
+			font-style: italic;
+			font-family: Cambria Verdana "Times New Roman" sans-serif;
+			color: #9999cc;
+			text-align: center;
+
+		}
+
+		#thumbnail{
+			border: 1px solid #ddd;
+			@include border-radius(9px);
+			@include box-shadow(#fff 0 0 12px);
+			float: left;
+			width: 580px;
+			/*height: 200px;*/
+			margin: 10px 10px 20px;
+			padding: 2px ;
+			img{
+				max-width: 100%;
+				max-height: 100%;
+			}
+		}
+		#content{
+			font-style: italic;
+			font-family: Cambria Verdana "Times New Roman" sans-serif;
+			color: #999;
+			float: left;
+				p{
+					font-size: 1em;
+					margin: 40px 0 40px 0;	
+					padding: 10px;			
+				}
+		}
+		 .commentaires{
+
+		 	h2{
+		 		font-size: 1.2em;
+		 		margin: 40px 0 0 0;
+		 	}
+		 	.commentaire{
+		 		background-color:#EEEEEE;
+				opacity:0.7;
+				padding:10px;
+				color:#999;
+				font-size:0.9em;
+				font-style:italic;
+				line-height:15px;
+				position:relative;
+				overflow:hidden;
+				margin:20px;
+		 		.avatar{
+		  			border:1px solid #DDD;
+		  			@include border-radius(3px);
+		  			@include box-shadow(#fff 0 0 10px);
+		  			height:100px; 
+		  			width: 100px;
+		  			float: left;
+		  			margin: 10px 20px;
+		  			img{
+		  				max-width:  100%;
+		  			}
+		  		}
+		  		.author{
+		  			font-size: 1em;
+		  			color: #414349;
+		  			font-weight: bold;
+		  			font-style: italic;
+		  			margin: 10px;
+		  			padding:10px;
+		  				span{
+		  					font-size: .7em;
+		  					padding: 0 20px;
+		  					opacity: .5;
+		  				}
+		  			}	
+  				.texte{
+
+  					font-size: .8em;
+  					font-style: italic;
+					font-family: Cambria Verdana "Times New Roman" sans-serif;
+					color: #999;
+  					/*float: right;*/
+  				}
+		 	}
+  	
+  			form{
+  			background-color:#EEEEEE;
+			opacity:0.7;
+			padding:10px;
+			color:#444444;
+			font-size:0.9em;
+			font-style:italic;
+			line-height:15px;
+			position:relative;
+			overflow:hidden;
+			margin:20px;
+			label{
+				display:block;
+				font-weight: bold;
+
+			}
+			input[type='text'],input[type='email'],	input[type='password']{
+				height:25px;
+				width:300px;
+				border:1px solid #DDD;
+				outline: none;
+			}	
+			textarea{
+				border:1px solid #DDD;
+				outline: none;
+				width:97%;
+				height:200px;
+			}
+			input[type='submit']{
+				background:#6083A3;
+				border:1px solid #DDD;
+				@include border-radius(3px);
+				color:#FFF;
+				font-size: 1em;
+				padding:5px 10px;			
+			}
+  			}
+ 		 }
+
+
+ 	
+
+	}
+
+	/*---------------------*/
+	/*     page contact      
+	/*---------------------*/
+
+	#boxMaps{
+		#form{
+			margin:50px 10px;
+		}
+		border: 1px solid #ddd;
+		@include border-radius(9px);
+		@include box-shadow(#fff 0 0 12px);
+		height: 2100px;
+		top: 30px;
+		position: absolute;
+		width: 63%;
+		float: left;
+		margin: 5px 10px;
+
+		small{
+			a{
+				font-size: .8em;
+				font-style: italic;	
+				text-decoration: none;
+				color: #999;
+				&:hover{
+					opacity:.6;
+				}
+			}
+		}
+			form{
+	  			background-color:#EEE;
+				opacity:0.7;
+				padding:10px;
+				color:#444444;
+				font-size:0.9em;
+				font-style:italic;
+				line-height:15px;
+				position:relative;
+				overflow:hidden;
+				margin:20px;
+					label{
+					display:block;
+					font-weight: bold;
+
+					}
+				input[type='text'],input[type='email'],	input[type='password']{
+					height:25px;
+					width:300px;
+					border:1px solid #DDD;
+					outline: none;
+				}	
+				textarea{
+					border:1px solid #DDD;
+					outline: none;
+					width:98%;
+					height:200px;
+				}
+				input[type='submit']{
+					background:#27b5f0;
+					border:1px solid #DDD;
+					@include border-radius(3px);
+					color:#FFF;
+					font-size: 1em;
+					padding:5px 10px;			
+				}
+	  		}
+  		
+	}
+
+	
+
+#pagination{
+				ul{		
+					margin: 0 0 0 10px; padding: 0;
+					li{
+						display: inline-block;
+						border: 1px solid #000;	
+						margin: 0;
+						padding: 1px 2px;
+					}
+					a{
+						outline: none;
+					}
+				}
+			}
+
+			/**********************************/
+			/*        Message d'erreur
+			/**********************************/
+			.error{
+		  	color: red;
+		  	font-weight: bold;
+		  }
+		  .alert_success{
+		  	background-color: #D1F9EA;
+		  	border: 1px block #ddd; 
+		  	color: green;
+		  	@include border-radius(3px);
+		  	text-align: center;
+		  }
+		  .alert_error{
+		  	background-color: #F2B0C9;
+		  	border: 1px block #ddd; 
+		  	color: #F40707;
+		  	@include border-radius(3px);
+		  	text-align: center;
+		  }
+
+		  	/*---------------------*/
+ 		/*   page compte.php   
+		/*---------------------*/
+		
+			#box_name{
+				position: relative;
+				height: 220px;
+				margin: 10px;
+				border: 1px solid #ddd;
+				@include border-radius(3px);
+				#thumb{
+					border: 1px solid #ddd;
+					width: 190px;
+					height: 190px;
+					float: left;
+					position: absolute;
+					margin: 20px;
+					img{
+						max-width: 190px;
+						max-height: 190px;
+						
+					}
+				}
+				#infos{
+					position: absolute;
+					float: right;
+					height: 80px;
+					width: 350px;
+					right: 5px;
+
+					p{
+						padding:35px 5px 0 5px; 
+						height:70px;
+						background-color: #9999CC;
+						font-size: .8em;
+						font-family: Cambria Verdana "Times New Roman" sans-serif;
+						font-style: italic;
+					}
+
+					h4{
+						font-size: 1em;
+						text-align: center;
+						color: #1E2244;
+						border-bottom: 1px dotted #132154;
+					}
+				}
+				
+			}
+			#box_infos{
+				height: 240px;
+				margin: 30px 10px; 
+				background-color: #9999CC;
+				border: 1px solid #ddd;
+				
+				color: #444;
+				span{
+					
+					font-size: .8em;
+					float: left;
+					color: #444;
+					font-family: Cambria Verdana "Times New Roman" sans-serif;
+					font-style: italic;
+				
+				}
+				h4{
+					padding: 5px 10px ;
+					font-style: italic;
+					color: #1E2244;
+				}
+				p{
+					float: left;
+					font-size: .8em;
+				    font-family: Cambria Verdana "Times New Roman" sans-serif;
+					font-style: italic;
+					padding: 10px;
+
+				} 
+			}
+			#boxComments_compte{
+				background-color: #9999CC;
+				height: 1900px; 
+				position: absolute;
+				width: 31%;
+				right:0;
+				padding: 20px 15px;
+				top: 10px;
+				margin: 20px 0;
+
+				.box_modif{
+					ul{
+						li{
+							a {
+								text-decoration: none;outline: none;
+								color: #fff;
+								font-family: Cambria Verdana "Times New Roman" sans-serif;
+								font-style: italic;	
+							}
+							list-style: none;
+						}
+					}
+					h2{
+						font-size: 1.5em;
+						color: #444;
+						font-family: Cambria Verdana "Times New Roman" sans-serif;
+						font-style: italic;
+						border-bottom: 1px dotted #132154;
+					}
+				}
+
+				.lastComments{
+					h2{
+						font-size: 1.5em;
+						color: #444;
+						font-family: Cambria Verdana "Times New Roman" sans-serif;
+						font-style: italic;
+						border-bottom: 1px dotted #132154;
+					}
+					p{
+						font-size: .8em;
+					    font-family: Cambria Verdana "Times New Roman" sans-serif;
+						font-style: italic;
+						padding: 10px;
+					}
+				}
+			}
+
+			#last_posts{
+				a{
+					text-decoration: none;
+					outline: none;
+					font-size: .8em;
+					    font-family: Cambria Verdana "Times New Roman" sans-serif;
+						font-style: italic;
+						margin: 2px;
+						padding: 2px;
+				}
+
+				h2{
+					color: #444;
+					border-bottom: 1px dotted #132154;
+					font-size: 1.2em;
+				}
+					.lastArticles{
+						width: 50%;
+						height: 100px;
+						position: relative;
+						float: left;
+						right: 0px;
+						border-bottom: 1px dotted #132154;
+					.thumb{
+						position: absolute;
+						float: left;
+						width: 75px;
+						height: 75px;
+						margin: 2px;
+						padding: 6px;
+						img{
+							max-width: 70px;
+							max-height: 70px;
+						}
+					}
+					.last_content{
+						width: 200px;
+						position: absolute;
+						float: right;
+						right: 0;
+					h4{
+						font-size: .8em;
+						text-align: center;
+						color: #1E2244;
+						margin: 2px;
+					}
+					p{
+						font-size: .8em;
+					    font-family: Cambria Verdana "Times New Roman" sans-serif;
+						font-style: italic;
+						margin: 2px;
+						padding: 2px;
+					}
+				}
+			}
+		}
+		
+		/*---------------------*/
+ 		/*    fin page compte.php   
+		/*---------------------*/
+
+		/*---------------------*/
+ 		/*   page profil.php   
+		/*---------------------*/
+		#box_profil{
+			width: 100%;
+			height: 300px;
+			margin: 10px 0px; 
+			background-color: #fff;
+			color: #444;
+
+			#thumb{
+					
+					width: 190px;
+					height: 190px;
+					float: left;
+					position: absolute;
+					margin: 10px;
+					border: 1px solid #000;
+					@include box-shadow(#fff 0 0 12px);
+					img{
+						border: 1px solid #ddd;
+						max-width: 190px;
+						max-height: 190px;
+						
+					}
+				}
+				#infos{
+					position: absolute;
+					float: right;
+					height: 200px;
+					width: 50%;
+					right: 2px;
+					background-color: #9999CC;
+					span{
+						width: 90%;
+						font-size: .8em;
+						float: left;
+						color: #444;
+
+					}
+
+					
+
+					h4{
+						font-size: 1em;
+						color: #1E2244;
+						border-bottom: 1px dotted #132154;
+					}
+				}
+			
+				
+				p{
+					float: left;
+					font-size: .8em;
+				    font-family: Cambria Verdana "Times New Roman" sans-serif;
+					font-style: italic;
+					padding: 10px;
+
+				} 
+
+	  			  
+		}

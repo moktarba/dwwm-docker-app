@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;}
+html,body{font-size:12px;color:#F0F0F0;}
+
+h1{
+	color:#333;
+	margin-left:30px;
+	text-transform:uppercase;
+	font-size: 15px;
+}
+
+h2{
+	/*color:#FFF;
+	border-bottom:1px solid #CC0;*/
+	margin-bottom:10px;
+	font-family:  "docteur_atomic" "Brush Script Std" Forte "Impregnable Personal Use Only"   Cambria Verdana  sans-serif;
+	color: #A4DDD4;
+	font-size: 5em;
+	text-align: center;
+	line-height: 70px;
+	border-bottom:5px solid #C3F461;
+	opacity: 1;
+}
+p{
+	color:#fff;
+	margin:20px 10px;
+	font-size: 2.5em;
+	font-family:"I'm fashionista!_DEMO-version" "Brush Script Std" "Impregnable Personal Use Only" "OneDirection" Papyrus Cambria  "Times New Roman" sans-serif;
+	font-style: italic;
+}
+a{color:#CC0;}
+
+#slider{
+	width:960px;
+	position:relative;
+	top:0px;
+	margin:0 auto;
+
+}
+
+#slider-window{
+	position:relative;
+	width:960px;
+	height:400px;
+	overflow:hidden;
+	margin:0 auto;
+
+}
+
+#prevSlide,#nextSlide{
+	width:30px;height:50px;
+	position:absolute;
+	top:150px;
+	cursor:pointer;
+	bottom:0;
+
+}
+#prevSlide{left:0;}
+#nextSlide{right:-2px;}
+
+.slide{
+	float:left;
+	position:relative;
+	list-style-type:none;
+	width:960px;
+	height:400px;
+	margin: 0 auto;
+	img{
+		max-width: 960px;
+
+	}
+}
+
+.slide-content{
+	position:absolute;
+	left:0;
+	top:0;
+	background:rgba(0,0,0,0.5);
+	height:400px;
+	width:400px;
+	padding:0px;
+}
+/*
+.read-more{float:right;}
+*/
+ul{
+	padding: 0;
+	margin:0;
+}
+/*
+.slide .slide-content h2{
+	font-size: 3em;
+	text-align: center;
+	font-family:"Times New Roman" Cambria Verdana  sans-serif;
+	color: #27b5f0;
+}
+.slide .slide-content p{
+	font-size: 2em;
+	font-family: "Vladimir Script" Cambria Verdana "Times New Roman" sans-serif;
+}

@@ -1,0 +1,226 @@
+@import "compass";
+
+/* ---------------------------------------------------- */
+/*		général for portfolio
+/* ---------------------------------------------------- */
+
+#wrap{
+	background: url("../portfolio/img/background_apropos.png");
+
+}
+	
+.container{
+	/*width: 960px;*/
+	margin:0 auto;
+	background:url("..img/background.png" 0 0 no-repeat);
+}
+
+
+nav{
+	/*width: 960px;*/
+
+	height:60px;
+	background-color: #003333;
+	@include box-shadow(#000 2px 0 10px);
+	@include border-radius(3px);
+	#navigation{
+		float: left;
+		width: 660px;
+		position: relative;
+		ul{
+			margin: 0 0 50px 5px;
+			padding: 0;
+
+			li{
+					float: left;
+					
+				a{
+					font-family: "I'm fashionista!_DEMO-version" "FunnyKid" Cambria Verdana "Times New Roman" sans-serif;
+					text-decoration: none;
+					padding: 0 10px;
+					color: #fff;
+					display: block;
+					line-height: 60px;
+
+				}
+			}
+		}
+		.membres{
+			position: absolute;
+			top:0;
+			right:0;
+			padding-right: 10px;
+			a{
+				font-size: .7em;
+				font-style: italic;
+			}
+		}
+
+	}
+	#search{
+		width: 200px;
+		float: right;
+		margin:20px 50px;
+		#q{
+			height: 20px;
+			color:#999;
+			width: 200px;
+			font-size: .9em;
+			border: 1px solid #47E8E8;
+			@include border-radius(8px);
+			padding: 0 0 0 20px;
+			outline: none;
+			background-color: #fff;
+			font-style: italic;
+			font-family: "FunnyKid" Cambria Verdana "Times New Roman" sans-serif;
+		}
+	}
+}
+
+/*-------------------------------*/
+/*            header            */
+/*------------------------------*/
+#logo{
+	height: 50px;
+	width: 150px;
+	a img{
+		display: block;
+	}
+}
+#header {
+	position: relative;
+	left: 30px;
+	#reseaux{
+		position: absolute;
+		right:30px;
+		top: 10px;
+		ul{
+			padding: 0;
+			margin: 0;
+			li{
+				display: inline-block;
+				@include box-shadow(#000 0 0 2px);
+				@include border-radius(3px);
+				
+				a{
+					width: 32px;
+					height: 32px;
+					display: block;
+					background: url("../img/reseaux.png") 0 0 no-repeat;
+				}
+					.fb{
+						background-position: -96px 0;
+						&:hover{
+							background-position:-96px -32px;
+						}
+					}
+
+					.gg{
+						background-position: -64px 0;
+						&:hover{
+							background-position:-64px -32px;
+						}
+					}
+
+					.tt{
+						background-position: 0 0;
+						&:hover{
+							background-position:0 -32px;
+						};
+					}
+
+					.yt{
+						background-position: -32px 0;
+						&:hover{
+							background-position:-32px -32px;
+						};
+					}
+				
+			}
+		}
+	}
+}
+
+
+/*-------------------------------*/
+/*        presentation          */
+/*------------------------------*/
+
+#presentation {
+	height: 400px;
+	width: 960px;
+	@include box-shadow(#000 0 0 2px);
+  	@include border-radius(8px);
+  	margin:20px auto;
+  	padding: 0;
+}
+
+footer{
+	@include box-shadow(#000 2px 0 10px);
+	@include border-radius(3px);
+	height:40px;
+	margin:50px auto;
+	background-color: #003333;
+	p{
+		font-style: italic;
+		font-size: .7em;
+		text-align: center;
+		color: #fff;
+		padding: 15px 0;
+	}
+
+}
+
+/*-------------------------------*/
+/*            portfolio            */
+/*------------------------------*/
+
+#portfolio{
+	background: url("../img/portfolio/background.png");
+	height: 10200px;
+	margin: 0 auto;
+	position: relative;
+	#nav{
+		opacity: .5;
+		position: fixed;
+	}
+	#retour{
+		-webkit-transform: rotate(-90deg); 
+		-moz-transform: rotate(-90deg);
+		position: fixed;
+		float: right;
+		bottom: 160px;
+		right: -30px;
+		opacity: .5;
+		&:hover{
+			opacity:1;
+		}
+		h5{
+			color: #333;
+			border: 1px solid #003333;
+			@include border-radius(3px);
+			@include box-shadow(#788C82 3px 3px 3px);
+			padding: 1.5px;
+			font-size: .8em;
+			font-style: italic;
+			opacity: .7;
+			background-color: #fff;
+		}
+		a{text-decoration: none;
+		outline: none;}
+	}
+	img{
+		margin: 0 auto;
+		padding: 0;
+		position: absolute;
+	}
+
+}
+
+/*-------------------------------*/
+/*            A propos          */
+/*------------------------------*/
+#apropos{
+	height:400px;
+
+}
